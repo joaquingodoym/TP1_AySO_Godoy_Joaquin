@@ -1,0 +1,238 @@
+echo SHOME
+man
+man man
+pwd
+ls
+whoami
+cd
+mkdir clase4
+ls
+ls -l
+cd clase4/
+pwd
+history
+cat > archivo1.txt
+cat archivo1.txt
+rm archivo1.txt 
+ls
+ls -l
+cat > archivo1.txt
+cat archivo1.txt 
+cat > archivo2.txt
+cat archiv2
+cat archivo2
+cat archivo2.txt
+cat archivo1.txt archivo2.txt > archivo3txt
+ls
+cat archivo3txt 
+grep Linea4 archivo3txt 
+grep -i LINEA4 archivo3txt 
+grep -c Linea4 archivo3txt 
+grep -n Linea4 archivo3txt 
+grep -v Linea4 archivo3txt 
+cd ..
+pwd
+ssh-keygen -t ed25519
+ls -l
+ls -la
+cd .ssh
+ls -l
+cat id_ed25519.pub 
+cd ..
+pwd
+cd repogit/
+ls
+git clone git@github.com:joaquingodoym/vmvagrant_repo.git
+ls -l
+cd vmvagrant_repo/
+ls -l
+echo "Mi primer repo" > texto1.txt
+ls -l
+cat texto1.txt 
+git status
+git add .
+git status
+git commit -m "mi primer commit"
+git config --global user.email "godoyjoaquin64@gmail.com"
+git config --global user.name "joaquingodoym"
+get commit "agrego texto1.txt"
+git commit "agrego texto1.txt"
+git commit -m "agrego texto1.txt"
+git status
+git push
+exit
+vagrant exit
+exit
+ls -l
+cd clase4/
+ls -l
+cat archivo3txt 
+grep linea3 archivo3txt 
+grep -i linea3 archivo3txt 
+grep -ci linea archivo3txt 
+grep -n 3 archivo3txt 
+grep -v 3 archivo3txt 
+tree
+sudo apt update
+sudo apt install tree
+tree
+pwd 
+pwd home
+cd ..
+pwd
+tree
+ls -l
+mkdir clase5
+ls -l
+cd clase5/
+pwd
+ls-l
+ls -l
+mkdir practica
+cd practica/
+ls -l
+touch practica1.txt
+ls -l
+cat practica1.txt 
+cp practica1.txt practica2.txt
+ls -l
+rm practica1.txt 
+ls -l
+mv practica2.txt /home/vagrant/clase5
+ls -l
+cd ..
+ls -l
+rmdir practica/
+ls -l
+mkdir facturas pedidos
+tree
+mkdir -p clientes/{facturas,pedidos}
+tree
+mkdir -p {clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+tree
+mkdir -p godoy_1/contactos/{clientes,proveedores}/{facturas,pedidos}
+treee
+tree
+mkdir -p godoy_2/{mama,papa}/{hijo{1,2,3},ahijado}
+tree
+rm -r godoy_2/
+TREE
+tree
+mkdir -p godoy_2/{mama/hijo{1,2,3},papa/ahijado,hijo{1,2,3}}
+tree
+rm -r godoy_2/
+tree
+mkdir -p godoy_2/{mama/hijo{1,2,3},papa/{ahijado,hijo{1,2,3}}}
+tree
+cd ..
+pwd
+groupadd Alumnos
+sudo groupadd Alumnos
+cat /etc/group
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -g Alumnos pepe
+cat /etc/group
+sudo useradd -m -s /bin/bash -C "Alumno pepe" -G Alumnos pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+cat /etc/group
+ls -l
+cd -
+cd ..
+ls -l
+ls -l /home
+user del pepe
+sudo userdel pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+rmdir pepe
+rm pepe
+ls -l
+cd ...
+cd ..
+rmdir pepe
+sudo rmdir pepe
+sudo rm -r pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+userdel pepe
+sudo userdel pepe
+sudo useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+grep pepe /etc/passwd
+grep -i Alumno /etc/group
+ls -l/home
+ls -l
+sudo passpw pepe
+su
+vagrant halt
+exit
+ssh-keygen -t ed25519
+cat $HOME/ssh/*.pub
+ls -l
+cd repogit/
+ls -;
+ls -l
+cd ..
+cat ssh/pub
+cd ssh
+cd repogit/
+ls -l
+git clone git@github.com:joaquingodoym/TP1_AySO_Godoy_Joaquin.git
+cd TP1_AySO_Godoy_Joaquin/
+pwd
+ls -l
+cat /etc/os-release
+grep
+man grep
+grep HOME_URL etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+grep -i Home_url /etc/os-release > datos_url.txt
+whoami
+echo "vagrant=$(whoami)" > datos_usuario.txt
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt
+"
+git status
+git push
+grep "ryzen 9 7950x" /proc/cpuinfo | dead -n1 >> datos_usuarios.txt
+grep "ryzen 9 7950x" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+ls -l
+cat datos_usuarios.txt 
+ls -l
+grep "ryzen 9 7950x" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+ls -l
+cat datos_usuarios.txt 
+cat datos_usuarios.txt
+cat /proc/cpuinfo
+grep "AMD Ryzen 9 7950X 16-Core Processor" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+cat datos_usuarios.txt
+git add .
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+cat datos_usuarios.txt
+git add .
+rm datos_usuarios.txt 
+ls 'l
+ls -l
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add .
+git commit -m "feat : Añadiendo informacion de CPU"
+cat <<EOF>> README.md
+Alumno: Godoy Montenegro Joaquin
+Division: 113
+Turno: Mañana
+EOF
+
+git add README.md datos_usuarios.txt 
+git commit -m "ADD: Añadiendo Readme y datos de usuario"
+git push
+mkdir -p {materia1,materia2}/{uni1,uni2,uni3}
+tree
+git add .
+git commit -m "ADD: Añadiendo estructura de directorios"
+history -a
+cp ~/.bash_history ./Historial_comandos_Apellido.txt
+ls -l
+git add .
+rm Historial_comandos_Apellido.txt 
+ls -l
+rm Historial_comandos_Godoy_Montenegro.txt 
